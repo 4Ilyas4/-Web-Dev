@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator-constructor</title>
+</head>
+<body>
+    <script>
+        function Calculator() {
+            this.read = function() {
+                this.a = Number(prompt('Введите первое число'));
+                this.b = Number(prompt('Введите второе число'));
+            };
+
+            this.sum = function() {
+                return this.a + this.b;
+            };
+
+            this.mul = function() {
+                return this.a * this.b;  
+            };
+        }
+    </script>
+</body>
+</html>

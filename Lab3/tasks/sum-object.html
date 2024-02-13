@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum-object</title>
+</head>
+<body>
+    <script>
+        let salaries = {
+            John: 100,
+            Ann: 160,
+            Pete: 130
+        };
+
+        let sum = 0;
+        for (name in salaries) {
+            sum += salaries[name];
+        }
+        alert(sum);
+    </script>
+</body>
+</html>

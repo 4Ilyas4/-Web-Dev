@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator-extendable</title>
+</head>
+<body>
+    <script>
+        function Calculator() {
+            this.operators = {
+                '+': (a, b) => a + b,
+                '-': (a, b) => a - b,
+            };
+
+            this.calculate = (expression) => {
+                const [aAsString, operator, bAsString] = expression.split(' ');
+
+                if (!(operator in this.operators)) {
+                    throw new Error(`Неизвестный оператор (${operator}).`);
+                }
+
+                const a = Number(aAsString);
+                const b = Number(bAsString);
+                return this.operators[operator](a, b);
+            };
+
+            this.addMethod = (operator, fn) => {
+                this.operators[operator] = fn;
+            };
+        }
+    </script>
+</body>
+</html>

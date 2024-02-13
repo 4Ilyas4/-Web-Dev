@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repeat-until-number</title>
+</head>
+<body>
+    <script>
+        function readNumber() {
+            let enteredValue;
+            do {
+                enteredValue = prompt('Введите число');
+                if (enteredValue === null || enteredValue === '') {
+                    return null;
+                }
+            } while (!isFinite(enteredValue));
+
+            return Number(enteredValue);
+        }
+    </script>
+</body>
+</html>
