@@ -1,0 +1,11 @@
+<div class="product-details"> 
+  <div *ngIf="product"> 
+    <h3>{{ product.name }}</h3>
+    <ng-container *ngIf="product.imagePath && product.imagePath.length">
+      <img *ngFor="let image of product.imagePath" [src]="image" alt="{{ product.name }}" class="product-image" style="max-width: 280px; max-height: 280px; margin-right: 10px;">
+    </ng-container> 
+    <h4>Цена : {{ product.price }} т</h4> 
+    <p>{{ product.description }}</p> 
+    <p>Рейтинг : {{ product.rating }} / 5</p> 
+  </div> 
+</div>
