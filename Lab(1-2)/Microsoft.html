@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>microsoft</title>
+    <style>
+        body {
+            font-family: 'Segoe UI';
+            background-color: #ffffff;
+            box-sizing: border-box;
+            margin: 0; 
+        }
+        .container {
+            position: relative;
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+            
+            left: 0px;
+        }
+        .top {
+            font-size: 17px;
+            position: absolute;
+            top: -30px;
+            display: flex;
+        }
+        .toplink {
+            outline: none;
+            color: #000;
+            padding: 24px;
+            
+            text-decoration: none;
+        }
+        .toplink:focus {
+            outline: 2px dashed #000;
+            text-decoration: 3px underline ;
+        }
+        .topa {
+            position: relative;
+            left: -115px;
+        }
+        .topb {
+            position: relative;
+            left: 100px;
+        }
+        #l0 {
+            position: relative;
+            top: -5px;
+            height: 45px;
+            display: inline-block;
+        }
+        #l0 img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        #lo::after {
+            content: '';
+            pointer-events: none;
+            box-sizing: border-box;
+        }
+        .mid {
+            background-image: url('M19.png');
+            background-size: cover; 
+            height: 400px; 
+            width: 100%;
+            position: relative;
+            top: 50px;
+        }
+        .c1 {
+            background-image: url('M19.png');
+        }
+        .c2 {
+            background-image: url('M20.png');
+        }
+        .p {
+            color: white;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .h {
+            font-weight: 570;
+            font-size: 34px;
+        }
+        .midtxt {
+            margin-top: 50px;
+            margin-left: 200px;
+        }
+        .btn {
+            background-color: rgb(0,103,204);
+            border-radius: 2px;
+            border: none;
+            width: 270px;
+            height: 35px;
+            color:#ffffff;
+            font-size: 17px;
+            font-weight: 400;
+        }
+        .end {
+            position: relative;
+            left: 0px;
+            top: 200px;
+            height: 480px;
+            width: 1365px;
+        }
+        .cell {
+            position: absolute;
+            width: 310px;
+            height: 280px;
+        }
+        .a1 {
+            font-weight: 550;
+            font-size: 30px;
+        }
+        .a2 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .a3 {
+            font-weight: 500;
+            font-size: 20px;
+            
+        } 
+        #r1 {
+            left: 5px;
+            top: 10px;
+
+        }
+        #r2 {
+            left: 350px;
+            top: 10px;
+        }
+        #r3 {
+            left: 700px;
+            top: 10px;
+
+        }
+        #r4 {
+            left: 1050px;
+            top: 10px;
+
+        }
+        .img {
+            width: 310px;
+            height: 180px;
+        }
+        .olink {
+            outline: none;
+            color : rgb(0,103,184);
+            text-decoration: none;       
+        }
+        .olink:focus {
+            text-decoration: underline;
+        }
+        #arrow {
+            position: absolute;
+            left: 972px;
+            top: 33px;
+            width: 15px;
+        }
+        #search {
+            position: absolute;
+            left: 1070px;
+            top: 29px;
+            width: 19px;
+        }
+        #login {
+            position: absolute;
+            left: 1164px;
+            top: 21px;
+            width: 31px;
+        }
+        #loginbtn {
+            padding-right: 40px;
+            text-align: left;
+        }
+        .midbtns {
+            position: absolute;
+            top: 500px;
+        }
+        #b1 {
+            width: 30px;
+        }
+        #b2 {
+            width: 30px;
+        }
+        #m1 {
+            margin-bottom: 5px;
+            width: 20px;
+        }
+        #m2 {
+            margin-bottom: 5px;
+            width: 20px;
+        }
+        #b3 {
+            width: 30px;
+        }
+        .b1btn {
+            background-color: transparent;
+            outline: none; 
+            border: none;
+        }
+        .b1btn:active {
+            border: 2px dashed #000;
+        }
+        .b {
+            background-color: transparent;
+            outline: none; 
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <a href="link0" class="toplink topa"><img id="l0" src="Microsoft.png" alt="Microsoft"></a>
+            <a href="link1" class="toplink topa">Microsoft 365</a>
+            <a href="link2" class="toplink topa">Office</a>
+            <a href="link3" class="toplink topa">Windows</a>
+            <a href="link4" class="toplink topa">Поддержка</a>
+            <a href="link5" class="toplink topb">Продукты Майкрософт</a>
+            <img id="arrow" src="dbtn.png">
+            <a href="link6" class="toplink topb">Поиск</a>
+            <img id="search" src="search.png">
+            <a id="loginbtn" href="link7" class="toplink topb">Войти</a>&emsp;
+            <img id="login" src="login.png">
+        </div>
+        <div class="midbtns">
+            <button onclick="changeImage()" class="b"><img id="b1" src="b1.png" class="b1btn"></button>
+            <button onclick="changeImage()" class="b"><img id="b2" src="b2.png" class="b1btn"></button>
+            <img id="m1" src="m1.png" >
+            <img id="m2" src="m2.png" >
+            <button onclick="changeImage()" class="b"><img id="b3" src="b3.png" class="b1btn"></button>
+            <script>
+                function changeImage() {
+                    var miel = document.querySelector('.mid');
+                    var i1 = document.getElementById('m1');
+                    var i2 = document.getElementById('m2');
+                    var midText = document.getElementById('midText');
+                    var ci1 = i1.src;
+                    var ci2 = i2.src;
+                    if (ci1.endsWith('m1.png')) {
+                        i1.src = 'm2.png';
+                        i2.src = 'm1.png';
+                        miel.classList.remove('c1');
+                        miel.classList.add('c2');
+                        midText.innerHTML = `
+                            <h class="h p">Встречайте новый Bing</h>
+                            <p class="p">Задавайте реальные вопросы. Общайтесь и создавайте. Получайте<br> ответы с веб-помощником на базе искусственного интеллекта.</p>
+                            <button class="btn">Подробнее о новом Bing</button>
+                        `;
+                    } else {
+                        i1.src = 'm1.png';
+                        i2.src = 'm2.png';
+                        miel.classList.remove('c2');
+                        miel.classList.add('c1');
+                        midText.innerHTML = `
+                            <h class="h p">Разработано для жизни<br> — сегодня и в будущем</h>
+                            <p class="p">Следующее поколение игр. Ваши цели. Друзья и семья. С<br> Windows 11 вы станете еще ближе к тому, что успели<br> полюбить.</p>
+                            <button class="btn">Проверьте, готов ли ваш ПК</button>
+                        `;
+                    }
+                }
+            </script>
+        </div>
+        <div class="mid c1"> 
+            <div class="midtxt" id="midText">
+                <h class="h p">Разработано для жизни<br> — сегодня и в будущем</h>
+                <p class="p">Следующее поколение игр. Ваши цели. Друзья и семья. С<br> Windows 11 вы станете еще ближе к тому, что успели<br> полюбить.</p>
+                <button class="btn">Проверьте, готов ли ваш ПК</button>
+            </div>
+        </div>
+        <div class="end">
+            <div id="r1" class="cell">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=380&hei=213&fit=crop" class="img">
+                <h class="a1">Microsoft Edge</h>
+                <p class="a2">Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей.</p>
+                <p class="a3"><a href="link8" class="olink">Скачать</a></p>
+            </div>
+            <div id="r2" class="cell">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=380&hei=213&fit=crop" class="img">
+                <h class="a1">Microsoft OneDrive</h>
+                <p class="a2">Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно.</p>
+                <p class="a3"><a href="link9" class="olink">Подробнее</a></p>
+            </div>
+            <div id="r3" class="cell">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=380&hei=213&fit=crop" class="img">
+                <h class="a1">OneNote</h>
+                <p class="a2">Приведите свои заметки и дела в порядок.</p>
+                <p class="a3"><a href="link10" class="olink">Узнать больше</a></p>
+            </div>
+            <div id="r4" class="cell">
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-MSCOM-Outlook-iOS-Android?wid=380&hei=213&fit=crop" class="img">
+                <h class="a1">Outlook для iOS и Android</h>
+                <p class="a2">Будьте на связи. Организовывайте. Успевайте больше.</p>
+                <p class="a3"><a href="link11" class="olink">Скачать</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

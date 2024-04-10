@@ -1,0 +1,6 @@
+{
+    "jupyter.interactiveWindow.codeLens.enableGotoCell": true,
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}

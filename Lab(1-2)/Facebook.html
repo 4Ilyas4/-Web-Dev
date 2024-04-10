@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook: войдите</title>
+    </head>
+    <style>
+        body {
+		background-color : rgb(240,242,245);
+                margin: 0;
+	}
+        .container {
+                position : relative;
+                width : 100%;
+                margin : 30% 40% auto;
+        }
+        .child {
+                position: relative; 
+                top : 10px;
+                left : 10px;
+        }
+        #ic {
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid #fff;
+            border-radius: 5px;
+            width: 283px;
+            height: 235px;
+            outline: none;
+            transition: border-color 0.3s;
+            padding: 10px;
+            left: 400px;
+            top: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .line {
+            border-top: 1px solid #c4c4c4;
+            width: 277px; 
+            left : 3px;
+            top : 24px;
+        }
+        .lineH {
+            position: absolute;
+            border-top: 1px solid #c4c4c4;  
+            top : 50px;
+            width: 730px;
+            left: 0px;
+        }
+        .h {
+                color : rgb(0,120,255) ;
+                font-size : 45px ;
+        }
+        .p {
+                font-family : "Segoe UI";
+        }
+        .po {
+                font-family : "Segoe UI";
+                color : #c4c4c4;
+                font-size : 12px ;
+        }
+        .b {
+                border: none;
+		border-radius: 6px;
+                color: white;
+                text-align: center;
+        }
+        .i {
+
+                height : 24px;
+                width : 270px;
+                border: 1px solid #ccc;
+                padding: 5px;
+                border-radius: 6px;
+                color: rgb(0, 0, 0);
+                outline: none; 
+                transition: border-color 0.3s;
+        }
+        .i:focus {
+                border-color: #1877f2; 
+        }
+        a {
+                color: #c4c4c4;   
+        }
+        #c {
+                position : absolute;
+                margin-left: 40%;
+        }
+        #o {
+                
+                position: relative;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid #fff;
+                width: 100vw;
+                height: 400px;
+                outline: none;
+                top: 300px;
+
+        }
+        #a1 {   
+                height: 160px;
+                width: 330px;
+
+                left : 0px;
+                top : 30px;
+        }
+        #a2 { 
+                left : 0px;
+                top : 20px;
+        } 
+        #a3 {
+                font-size : 20px ;
+                font-weight : 490 ;
+
+                left : 0px;
+                top : 8px;
+        }
+        #a4 {
+                position : absolute;
+                left : 10px;
+                top : 10px;
+                z-index: 2;
+        }
+        #a5 {
+                font-size : 12px ;
+                color : rgb(0,120,255) ;
+                font-weight : 600;
+                height : 13px;
+                width : 100px;
+                left : 90px;
+                top : 20px;
+        }
+        #a6 {
+                font-size : 11px ;
+                font-weight : 450 ;
+                width : 325px ;
+
+                left : 0px;
+                top : 76px;
+        }
+        #b1 {	
+                height : 35px ;
+                width : 280px ;
+                font-size : 15px ;
+                font-weight : 700 ;
+                background-color: rgb(0,120,255) ;
+
+                left : 0px;
+                top : 20px;
+        }
+        #b2 {
+                height : 35px ;
+                width : 150px ;
+                font-size : 14px ;
+                font-weight : 700 ;
+                background-color: rgb(67, 184, 43);
+
+                left : 68px;
+                top : 45px;
+        }
+        #un{
+
+                left : 0px;
+                top : 0px;
+        }
+        #pw {
+                
+                left : 0px;
+                top : 10px;
+        }
+        #d1 {
+                position : absolute;
+                left : 0px;
+                top : 10px;
+                height: 15px;
+                width: 730px;
+        }
+        #d2 {
+                position : absolute;
+                left : 0px;
+                top : 60px;
+                width: 730px;
+        }
+
+    </style>
+    <body>
+    
+    <div class="container">
+        <div id="a1">
+       	     <h1 id="a2" class="child h p">facebook</h1>
+	     <p id="a3" class="child p">Facebook помогает вам всегда <br>
+	     оставаться на связи и общаться со <br>
+	     своими знакомыми.</p>
+        </div>
+        <div id="ic">
+        <div id="a4">
+        <input type="text" dir="auto" id="un" name="username" class="child i" placeholder="Электронный адрес или номер телефона"/>
+        <input type="password" id="pw" name="password" minlength="8" required class="child i"  placeholder="Пароль"/>
+        <button id="b1" class="child p b">Вход</button>
+        <p id="a5" class="child p">Забыли пароль?</p>
+        <div class="line child"></div>
+        <button id="b2" class="child p b">Создать аккаунт</button>
+        <p id="a6" class="child p"><strong>Создать Страницу</strong> знаменитости, музыкальной группы <br>
+&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;или компании.</p>
+        </div>
+        </div>
+    </div> 
+    <div id="o" class="po">
+        <div id="c">
+            <div id="d1">
+                <a href="link1">Русский</a>
+                <a href="link2">English (US)</a>
+                <a href="link3">Türkçe</a>
+                <a href="link4">Bahasa</a>
+                <a href="link5">Indonesia</a>
+                <a href="link6">中文(简体)</a>
+                <a href="link7">Қазақша</a>
+                <a href="link8">Deutsch</a>
+                <a href="link9">한국어</a>
+                <a href="link10">Shqip</a>
+                <a href="link11">Español</a>
+                <a href="link12">Português (Brasil)</a>
+                <a href="link13"><img src="https://cdn1.iconfinder.com/data/icons/black-bold-style-1/3/04-1024.png" alt="different language" width="20px"></a>
+            </div>
+            <div class="lineH child"></div>
+            <div id="d2">
+                <a href="link1">Регистрация  Вход  Messenger  Facebook  Lite  Видео  Места  Игры  Marketplace  Meta  PayMeta  Store  Meta  QuestImagine  MetaAI  Instagram  Threads  Благотворительные акции  Услуги  Центр информации о выборах  Политика конфиденциальности  Центр конфиденциальности  Группы Информация  Создать рекламу  Создать Страницу  Разработчикам  Вакансии  Файлы cookie  Рекламные предпочтения  Условия использования  Справка  Загрузка контактов и лица, не являющиеся пользователями  Настройки  Журнал действий</a>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
