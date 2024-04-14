@@ -1,0 +1,39 @@
+.vacancy-details {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.vacancy-details h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.vacancy-details .info p {
+    margin: 5px 0;
+}
+
+.vacancy-details .info strong {
+    font-weight: bold;
+}
+
+.navigation-links {
+    margin-top: 20px;
+}
+
+.navigation-links a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navigation-links a:hover {
+    background-color: #0056b3;
+}

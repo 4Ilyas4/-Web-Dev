@@ -1,0 +1,18 @@
+<div *ngIf="vacancy">
+    <div class="vacancy-details">
+        <h2>Vacancy Details</h2>
+        <div class="info">
+            <p><strong>Name:</strong> {{ vacancy.name }}</p>
+            <p><strong>Description:</strong> {{ vacancy.description }}</p>
+            <p><strong>Salary:</strong> {{ vacancy.salary }}</p>
+        </div>
+    </div>
+</div>
+<div *ngIf="!vacancy">
+    <div class="vacancy-details">
+        <h2>Not Found Such Vacancy!</h2>
+        <div class="navigation-links">
+            <a routerLink="/home">Home</a>
+        </div>
+    </div>
+</div>

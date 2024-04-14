@@ -1,0 +1,12 @@
+<div class="vacancy-list">
+    <h2>Companies with Vacancies</h2>
+    <ul>
+        <li *ngFor="let company of companylist | async">
+            <a [routerLink]="['/companies', company.id]">{{ company.name }}</a>
+        </li>
+    </ul>
+    <div class="navigation-links">
+        <a routerLink="/home">Home</a>
+    </div>
+</div>
+

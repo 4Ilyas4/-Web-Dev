@@ -1,0 +1,32 @@
+<div *ngIf="company">
+    <div class="company-details">
+        <h2>Company Details</h2>
+        <div class="info">
+            <p><strong>Name:</strong> {{ company.name }}</p>
+            <p><strong>Description:</strong> {{ company.description }}</p>
+            <p><strong>City:</strong> {{ company.city }}</p>
+            <p><strong>Address:</strong> {{ company.address }}</p>
+        </div>
+        <h3>Vacancies</h3>
+        <div *ngIf="vacancyList.length > 0">
+            <div class="vacancy-list">
+                <ul>
+                    <li *ngFor="let vacancy of vacancyList">
+                        <a [routerLink]="['/vacancies', vacancy.id]">{{ vacancy.name }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div *ngIf="vacancyList.length === 0">
+            <p>Sorry, here is no vacancies!</p>
+        </div>
+    </div>
+</div>
+<div *ngIf="!company">
+    <div class="company-details">
+        <h2>Not Found Such Vacancy!</h2>
+        <div class="navigation-links">
+            <a routerLink="/home">Home</a>
+        </div>
+    </div>
+</div>
